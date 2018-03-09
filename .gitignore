@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs
+/BikeRentalDB/.vs
+/BikeRentalDB/BikeRentalASP/bin/Debug/netcoreapp2.0
+/BikeRentalDB/BikeRentalASP/obj
+/BikeRentalDB/BikeRentalTest/bin/Debug/netcoreapp2.0
+/BikeRentalDB/BikeRentalTest/obj
