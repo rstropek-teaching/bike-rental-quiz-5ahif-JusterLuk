@@ -11,7 +11,7 @@ using System;
 namespace BikeRentalASP.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20180225140827_Initial")]
+    [Migration("20180313140301_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

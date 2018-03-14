@@ -10,12 +10,13 @@ using BikeRentalASP;
 namespace BikeRentalASP.Controllers
 {
     [Produces("application/json")]
-    [Route("api/Bikes")]
+    [Route("api")]
     public class BikesController : Controller
     {
 
         // GET: api/Bikes
         [HttpGet]
+        [Route("Bikes")]
         public IActionResult GetBikes([FromQuery] String s)
         {
             DataContext db = new DataContext();
@@ -43,6 +44,7 @@ namespace BikeRentalASP.Controllers
         }
 
         [HttpPut]
+        [Route("NewBike")]
         public IActionResult CreateBike([FromBody] Bikes bike)
         {
             DataContext db = new DataContext();

@@ -27,8 +27,8 @@ namespace BikeRentalASP
         {
             services.AddMvc();
 
-            var conn = "Server=(localdb)\\MSSQLLocalDB;Database=BikeDB;Trusted_Connection=True;ConnectRetryCount=0";
-            services.AddDbContext<DbContext>(options => options.UseSqlServer(conn));
+            var conn = "Server=tcp:justerserver.database.windows.net,1433;Initial Catalog=BikeRentalDB;Persist Security Info=False;User ID=lukas;Password=if130016!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+            services.AddDbContext<DataContext>(options => options.UseSqlServer(conn));
 
             services.AddSwaggerGen(c =>
             {

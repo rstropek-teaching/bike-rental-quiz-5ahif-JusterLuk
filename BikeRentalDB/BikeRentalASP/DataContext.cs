@@ -23,7 +23,7 @@ namespace BikeRentalASP
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLOCALDB;Database=BikeDB;Trusted_Connection=True");
+            optionsBuilder.UseSqlServer("Server=tcp:justerserver.database.windows.net,1433;Initial Catalog=BikeRentalDB;Persist Security Info=False;User ID=lukas;Password=if130016!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         }
         
     }
